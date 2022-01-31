@@ -1,7 +1,10 @@
 name: My first action
-on: [push]
+on:
+  push:
+    branches: [main]
 jobs:
   Greetings:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
+      - uses: actions/checkout@v2
