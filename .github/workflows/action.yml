@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: mkdir Plop; ls > ls_file ; mv ls_file Plop ; ls /Plop/
+      - run: mkdir Plop; ls > ls_file ; mv ls_file Plop ; ls Plop/
